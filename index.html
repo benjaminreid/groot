@@ -5,20 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Groot</title>
     <style>
+      html {
+        background-color: #000;
+      }
       html, body {
         width: 100%;
         height: 100%;
+        margin: 0;
       }
       body {
         background-image: url(https://s3.amazonaws.com/nouveller.groot/groot.gif);
         background-size: cover;
         background-position: 70% 50%;
         overflow: hidden;
+        -webkit-animation: fadein 3s;
+           -moz-animation: fadein 3s;
+            -ms-animation: fadein 3s;
+             -o-animation: fadein 3s;
+                animation: fadein 3s;
       }
       iframe {
         display: block;
         width: 0;
         height: 0;
+      }
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      @-moz-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      @-ms-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      @-o-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
       }
     </style>
   </head>
